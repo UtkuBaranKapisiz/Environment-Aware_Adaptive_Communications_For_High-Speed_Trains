@@ -80,3 +80,7 @@ Selection of the most appropriate model based on accuracy, F1-score, and other m
 
 - Real-Time Monitoring:
   The real-time data transmitted from the sensors helps update the environmental awareness model in real time, facilitating dynamic adjustment of the wireless communication system's relays.
+
+#### flask_app.py
+
+**Purpose:** This Flask-based web server serves as the backend API for receiving, storing, and providing access to sensor data from the ESP8266 devices (nodes) deployed along the train’s route. The application accepts data from two different sets of nodes, stores the latest values in memory, and allows other systems to retrieve the most recent data via HTTP GET requests.
