@@ -17,7 +17,7 @@ Models:
 
 
 # import csv
-df = pd.read_csv(r"D:\BITIRME-PROJESI\Bitirme\Model\datasetCombined.csv")
+df = pd.read_csv(r"<your_dir>\Model\datasetCombined.csv") # Replace with your dir
 df.columns = ["Cografya_zorlugu", "Tunel_sayisi", "Hava_kosulu_zorlugu", "Iletim_noktasi_uzaklik", "DurumLOS", "Bolge_tren_hizi", "Hedef_degisken"]
 df.head()
 

@@ -12,7 +12,7 @@ hava_durumu = 5
 def get_data():
     # Function to get the latest data from Flask API
     def get_latest_from_api():
-        api_url = "https://romuloyloy.pythonanywhere.com/get_latest"  # Replace with your actual Flask API URL
+        api_url = "https://<your_api>.pythonanywhere.com/get_latest"  # Replace with your actual Flask API URL, pythonanywhere is an option
         response = requests.get(api_url)
         if response.status_code == 200:
             return response.json()
@@ -34,7 +34,7 @@ def get_data():
 def get_data2():
     # Function to get the latest data from Flask API
     def get_latest_from_api2():
-        api_url = "https://romuloyloy.pythonanywhere.com/get_latest2"  # Replace with your actual Flask API URL
+        api_url = "https://<your_api>.pythonanywhere.com/get_latest2"  # Replace with your actual Flask API URL
         response = requests.get(api_url)
         if response.status_code == 200:
             return response.json()
@@ -189,10 +189,10 @@ def generate_array_for_node(node):
 
 def get_predictions(features_df):
     # Load the models
-    model5 = joblib.load(r'D:\BITIRME-PROJESI\Bitirme\decision_tree.joblib')
-    model6 = joblib.load(r'D:\BITIRME-PROJESI\Bitirme\random_forest.joblib')
-    model7 = joblib.load(r'D:\BITIRME-PROJESI\Bitirme\gradient_boosting.joblib')
-    model8 = joblib.load(r'D:\BITIRME-PROJESI\Bitirme\random_forest.joblib')
+    model5 = joblib.load(r'<your_dir>\decision_tree.joblib') # replace with your joblib dir
+    model6 = joblib.load(r'<your_dir>\random_forest.joblib') # replace with your joblib dir
+    model7 = joblib.load(r'<your_dir>\gradient_boosting.joblib') # replace with your joblib dir
+    model8 = joblib.load(r'<your_dir>\random_forest.joblib') # replace with your joblib dir
 
     # List of models for convenience
     models = [model5, model6, model7, model8]
