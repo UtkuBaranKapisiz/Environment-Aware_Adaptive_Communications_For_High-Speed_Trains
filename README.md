@@ -4,6 +4,8 @@
 
 - [Ozan Can Okay](https://github.com/Romuloyloy) - This project was completed with the joint efforts of the ozan can okay and myself
 
+---
+
 ### Project Overview
 
 In the routes of high-speed trains, particularly in challenging geographical areas, there are declines in the performance of cellular communication systems, which can lead to interruptions for passengers on the train. Wireless communication channels can be directly affected by geographical features and the mobility levels of users.
@@ -14,6 +16,8 @@ Given the interdisciplinary nature of the project, a demo was conducted using mo
 
 This adaptable, environmentally aware system is visualized through an enhanced interface, allowing us to monitor the need for additional relays and optimize communication performance dynamically.
 
+---
+
 ### Installation
 
 Ensure you have the necessary dependencies installed. You can install them using the following command:
@@ -21,6 +25,8 @@ Ensure you have the necessary dependencies installed. You can install them using
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 ### File Descriptions
 
@@ -32,6 +38,8 @@ pip install -r requirements.txt
 Model fitting on the prepared dataset.
 Saving models to disk for future use.
 
+---
+
 #### interface.py
 
 **Purpose:** This script is developed using the Streamlit library. It provides a real-time interface to monitor the system's performance and adjust parameters on the fly. The interface updates with real-time changes in the wireless communication data, allowing users to monitor the need for additional relays dynamically.
@@ -39,6 +47,8 @@ Saving models to disk for future use.
 **Key Features:**
 Real-time data visualization and monitoring.
 User-friendly interface for parameter adjustments and relay requirement insights.
+
+---
 
 #### functions.py
 
@@ -51,6 +61,8 @@ User-friendly interface for parameter adjustments and relay requirement insights
 - Prediction: Use trained models to predict communication difficulty levels.
   Other utilities for smooth operation of the interface.
 
+---
+
 #### model_selection.ipynb
 
 **Purpose:** This Jupyter Notebook is where data analysis and model performance testing were conducted. The performances of 8 different machine learning models were evaluated on the dataset, and results were compared to select the best model for real-time prediction in the system.
@@ -60,9 +72,13 @@ Data analysis and visualization to understand the dataset better.
 Testing and comparing the performance of 8 different machine learning models.
 Selection of the most appropriate model based on accuracy, F1-score, and other metrics.
 
+---
+
 #### data_to_sheet.ino
 
 **Purpose:** This Arduino/ESP8266 script is responsible for collecting sensor data from various nodes along the train's route and transmitting that data to a Flask-based API. It establishes a secure connection to a Wi-Fi network and periodically sends sensor data (such as the node the train is currently passing through) to a web server for further processing and integration into the system.
+
+---
 
 **Key Functions:**
 
@@ -80,6 +96,8 @@ Selection of the most appropriate model based on accuracy, F1-score, and other m
 
 - Real-Time Monitoring:
   The real-time data transmitted from the sensors helps update the environmental awareness model in real time, facilitating dynamic adjustment of the wireless communication system's relays.
+
+---
 
 #### flask_app.py
 
