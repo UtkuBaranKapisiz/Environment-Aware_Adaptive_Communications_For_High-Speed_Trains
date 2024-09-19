@@ -10,6 +10,8 @@
 
 The key aspect of our project is implementing one of the simplest methods for transferring data from a NodeMCU to a Python backend. This was achieved by using Flask to create a lightweight API that collects sensor data in real time. The project was made possible by using the free hosting services provided by [**PythonAnywhere.com**](https://www.pythonanywhere.com), which allowed us to deploy the Flask app and manage data seamlessly. Special thanks to PythonAnywhere for their valuable free-tier support, which was instrumental in enabling this part of our system.
 
+---
+
 ### Project Overview
 
 In the routes of high-speed trains, particularly in challenging geographical areas, there are declines in the performance of cellular communication systems, which can lead to interruptions for passengers on the train. Wireless communication channels can be directly affected by geographical features and the mobility levels of users.
