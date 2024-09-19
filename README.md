@@ -1,5 +1,9 @@
 ## High-Speed Train Wireless Communication System with Environmental Awareness
 
+### Contributors
+
+- [Ozan Can Okay](https://github.com/Romuloyloy) - This project was completed with the joint efforts of the ozan can okay and myself
+
 ### Project Overview
 
 In the routes of high-speed trains, particularly in challenging geographical areas, there are declines in the performance of cellular communication systems, which can lead to interruptions for passengers on the train. Wireless communication channels can be directly affected by geographical features and the mobility levels of users.
