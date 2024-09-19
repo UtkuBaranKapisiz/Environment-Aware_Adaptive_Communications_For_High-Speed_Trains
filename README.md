@@ -78,8 +78,6 @@ Selection of the most appropriate model based on accuracy, F1-score, and other m
 
 **Purpose:** This Arduino/ESP8266 script is responsible for collecting sensor data from various nodes along the train's route and transmitting that data to a Flask-based API. It establishes a secure connection to a Wi-Fi network and periodically sends sensor data (such as the node the train is currently passing through) to a web server for further processing and integration into the system.
 
----
-
 **Key Functions:**
 
 - Wi-Fi Connection Setup:
